@@ -1,0 +1,66 @@
+body{
+background-image: url("bob.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+h1{font-family: 'Slackey', cursive;
+	color: #EED229;
+	position: fixed;
+	top: 35%;
+	left: 25%;
+	font-weight: bold;
+	font-size: 1.4em;
+	 text-shadow: 0 0 15px white, 0 0 5px white;
+}
+#btn{
+	position: fixed;
+	top: 61%;
+	left: 49%;
+	background-color: #EED229;
+	height: 40px;
+	width: 40px;
+	font-weight: bold;
+	border-radius: 50%;
+	color: white;
+	border: 5px white solid;
+  animation: glowing 5000ms infinite;	
+}
+@keyframes glowing {
+  0% { box-shadow: 0 0 -10px white; }
+  40% { box-shadow: 0 0 20px white; }
+  60% { box-shadow: 0 0 20px white; }
+  100% { box-shadow: 0 0 -10px white; }
+}
+p{
+	display: none;
+}
+h2{
+	font-size: 3em;
+	font-weight: bold;
+	padding: 10%;
+	text-align: center;
+	color: white;
+	font-family: 'Black Ops One', cursive;
+	opacity: 0.65;
+}
+@media screen and (min-width: 700px) {
+  body {
+    background-image: none;
+    background-color: pink;
+  }
+  h1, h2,#btn{
+  	display: none;
+  }
+p{
+	 padding: 30% 0;
+	text-align: center;
+	display: block;
+	color: white;
+	font-size: 5em;
+	position: relative;
+	top: 50%;
+	font-family: 'Slackey', cursive;
+}
+}
